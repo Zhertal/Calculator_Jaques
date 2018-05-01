@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BinaryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Binary Calculator" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:stretchColumns="*">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#D9D9D9"
+            android:baselineAligned="false"
+            android:text="Binary"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="#D9D9D9"
+            android:text="Pulse aqui"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/myTextView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_span="3"
+                android:text="Resultado"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnIg"
+                android:layout_span="1"
+                android:text="="
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn1"
+                android:text="1"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn0"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnSuma"
+                android:text="+"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnResta"
+                android:text="-"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnMul"
+                android:text="x"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:text="/"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnBorr"
+                android:text="C"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnCHex"
+                android:text="Conv hex" />
+        </TableRow>
+
+        <TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="89dp">
+
+            <Button
+                android:id="@+id/buttonDec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="llamarDec"
+                android:text="DEC" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="109dp"
+            android:layout_height="151dp" />
+
+    </TableLayout>
+
+</FrameLayout>
